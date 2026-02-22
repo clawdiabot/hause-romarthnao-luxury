@@ -4,11 +4,159 @@
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
   &lt;title&gt;Hause Romarthnao - Simétrico Luxury Grid&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+  &lt;style&gt;
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  color: #d4af37; /* Gold */
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  margin: 0;
+  color: #d4af37;
+}
+
+.hero-content p {
+  font-size: 2em;
+}
+
+.section {
+  padding: 50px;
+  background-color: #1a1a1a;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #d4af37;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.prices table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #d4af37;
+}
+
+.prices th, .prices td {
+  border: 1px solid #d4af37;
+  padding: 10px;
+  text-align: center;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial {
+  background: #333;
+  padding: 20px;
+  border: 1px solid #d4af37;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #d4af37;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Mobile responsive bulletproof */
+@media (max-width: 768px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+  .hero-content p {
+    font-size: 1.2em;
+  }
+  .section {
+    padding: 30px 10px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .prices table {
+    width: 100%;
+  }
+}
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
   &lt;header&gt;
-    &lt;img src=&quot;logo.svg&quot; alt=&quot;HR Logo&quot; class=&quot;logo&quot;&gt;
+    &lt;img src=&quot;data:image/svg+xml;base64,Jmx0O3N2ZyB4bWxucz0mcXVvdDtodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyZxdW90OyB2aWV3Qm94PSZxdW90OzAgMCAxMDAgMTAwJnF1b3Q7Jmd0OwogICZsdDtyZWN0IHdpZHRoPSZxdW90OzEwMCZxdW90OyBoZWlnaHQ9JnF1b3Q7MTAwJnF1b3Q7IGZpbGw9JnF1b3Q7bm9uZSZxdW90Oy8mZ3Q7CiAgJmx0O3RleHQgeD0mcXVvdDsxMCZxdW90OyB5PSZxdW90OzcwJnF1b3Q7IGZvbnQtZmFtaWx5PSZxdW90O0FyaWFsLCBzYW5zLXNlcmlmJnF1b3Q7IGZvbnQtc2l6ZT0mcXVvdDs2MCZxdW90OyBmaWxsPSZxdW90OyMwMDAmcXVvdDsgZm9udC13ZWlnaHQ9JnF1b3Q7Ym9sZCZxdW90OyZndDtIUiZsdDsvdGV4dCZndDsKJmx0Oy9zdmcmZ3Q7&quot; alt=&quot;HR Logo&quot; class=&quot;logo&quot;&gt;
     &lt;h1&gt;Hause Romarthnao&lt;/h1&gt;
   &lt;/header&gt;
 
