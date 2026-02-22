@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  color: #d4af37; /* Gold */
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  margin: 0;
+  color: #d4af37;
+}
+
+.hero-content p {
+  font-size: 2em;
+}
+
+.section {
+  padding: 50px;
+  background-color: #1a1a1a;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #d4af37;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.prices table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #d4af37;
+}
+
+.prices th, .prices td {
+  border: 1px solid #d4af37;
+  padding: 10px;
+  text-align: center;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial {
+  background: #333;
+  padding: 20px;
+  border: 1px solid #d4af37;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #d4af37;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
